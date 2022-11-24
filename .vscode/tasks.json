@@ -3,29 +3,29 @@
 	"tasks": [
 		{
 			"type": "func",
-			"label": "func: host start",
 			"command": "host start",
 			"problemMatcher": "$func-node-watch",
 			"isBackground": true,
-			"dependsOn": "npm build (functions)"
+			"dependsOn": "npm build"
 		},
 		{
 			"type": "shell",
-			"label": "npm build (functions)",
-			"command": "npm run build",
-			"dependsOn": "npm install (functions)",
-			"problemMatcher": "$tsc"
+			"label": "npm build",
+			"command": "npm run watch",
+			"dependsOn": "npm install",
+			"problemMatcher": "$tsc-watch",
+			"isBackground": true
 		},
 		{
 			"type": "shell",
-			"label": "npm install (functions)",
+			"label": "npm install",
 			"command": "npm install"
 		},
 		{
 			"type": "shell",
-			"label": "npm prune (functions)",
+			"label": "npm prune",
 			"command": "npm prune --production",
-			"dependsOn": "npm build (functions)",
+			"dependsOn": "npm build",
 			"problemMatcher": []
 		}
 	]
