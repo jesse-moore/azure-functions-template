@@ -2,7 +2,7 @@
   "name": "azure-functions-template",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/HttpTrigger/index.js",
+  "main": "dist/src/functions/*.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
