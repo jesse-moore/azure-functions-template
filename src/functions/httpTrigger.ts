@@ -7,6 +7,6 @@ export async function httpTrigger(request: HttpRequest, context: InvocationConte
 
 app.http('httpTrigger', {
     methods: ['GET', 'POST'],
-    authLevel: 'anonymous',
+    authLevel: 'function',
     handler: httpTrigger
 });

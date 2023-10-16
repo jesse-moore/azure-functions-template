@@ -87,9 +87,13 @@ typings/
 dist
 out
 
+# Rollup output
+.rollup
+
 # Azure Functions artifacts
 bin
 obj
+deploy.zip
 appsettings.json
 local.settings.json
 
