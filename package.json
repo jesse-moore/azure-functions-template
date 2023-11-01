@@ -2,10 +2,10 @@
   "name": "azure-functions-template",
   "version": "1.0.0",
   "description": "",
-  "main": "httpTrigger.js",
+  "main": "build/src/functions/httpTrigger.js",
   "scripts": {
     "build": "npm run clean && npx rollup --config && npm run zip",
-    "clean": "rimraf .rollup && rimraf ./dist && rimraf deploy.zip",
+    "clean": "rimraf .rollup && rimraf ./build && rimraf ./dist",
     "deploy": "node deploy.js",
     "watch": "tsc -w",
     "prestart": "npm run build && func extensions install",
